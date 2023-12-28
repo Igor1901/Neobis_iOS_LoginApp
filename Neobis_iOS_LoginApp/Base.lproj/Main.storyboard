@@ -46,6 +46,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="eye"/>
+                                <connections>
+                                    <action selector="eyeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugB-R5-dQR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayq-0D-SOS">
                                 <rect key="frame" x="22" y="623" width="349" height="56"/>
@@ -59,6 +62,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.94478103739999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQU-e3-HOV"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter your email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8eB-na-bkM">
                                 <rect key="frame" x="22" y="434" width="349" height="56"/>
@@ -88,6 +94,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Register Now">
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="registerInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J2M-hb-33D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -110,6 +119,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgotButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rec-Q4-X8n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -139,10 +151,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="accountLabel" destination="und-Rf-OLc" id="nW3-du-QZc"/>
+                        <outlet property="box" destination="9yX-aR-T2e" id="fuD-db-Ufb"/>
                         <outlet property="emailTextField" destination="8eB-na-bkM" id="dU7-ne-FxX"/>
-                        <outlet property="loginButton" destination="Ayq-0D-SOS" id="7c9-FB-lE5"/>
+                        <outlet property="forgotButton" destination="2h5-me-eTK" id="g8s-sU-kFe"/>
+                        <outlet property="loginButton" destination="Ayq-0D-SOS" id="ovV-l9-flE"/>
                         <outlet property="myImage" destination="txd-qy-3AQ" id="qxf-zE-BX3"/>
                         <outlet property="passwordTextField" destination="7fb-TU-Wic" id="euC-e0-PVv"/>
+                        <outlet property="registerButton" destination="RDL-9d-qfu" id="iuY-t3-NlF"/>
                         <outlet property="viewPasswordButton" destination="ioe-oC-I2E" id="NF4-2z-B3T"/>
                         <outlet property="welcomeLabel" destination="c6L-2o-M7i" id="FpA-56-G00"/>
                     </connections>
